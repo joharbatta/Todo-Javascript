@@ -158,17 +158,18 @@ body{
     width: 350px;
     height: auto;
     margin: 0 auto;
+    margin-top: 70px;
     text-align: center;
     background: white;
-    height: 800px;
+    height: 600px;
     overflow-y: auto;
     color: black;
     border: 10px solid #01a3a4;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 #container h1{
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-transform:uppercase;
 }
 #container ul{
@@ -178,7 +179,7 @@ body{
 #container ul li{
     list-style: none;
     border: 2px solid #b5c5dd;
-    width:80%;
+    width:70%;
     opacity: 100;
     transition: opacity 0.5s ease-in-out;
     height: 40px;
@@ -190,7 +191,7 @@ body{
     vertical-align: middle;
     height: 100%;
     line-height: 40px;
-    font-size: 18px;
+    font-size: 16px;
 }
 #container ul li #check{
     float: left;
@@ -206,13 +207,13 @@ body{
     content: '\2714';
     font-size: 20px;
     position: absolute;
-    top: 0px;
-    left: 7px;
+    top: -1px;
+    left: 6px;
     color: black;
 }
 #container ul li input[type="checkbox"]:checked+label{
     text-decoration: line-through;
-    color: rgba(0, 0, 0, 3);
+    color: rgba(255, 0, 0, 3);
 }
 #container .controls{
     width: 60%;
@@ -251,6 +252,7 @@ body{
     border-radius: 20px;
 }
 #container .controls #remove{
+    margin-top: 7px;
     background-color: #c0392b;
     border-radius: 10px;
 }
