@@ -148,11 +148,29 @@
 
 */
 
+.parallax {
+    /* The image used */
+    background-image: url("back.png");
+  
+    /* Set a specific height */
+    min-height: 50px; 
+    
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-
-
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
 body{
-    background-color:#34495e;
+    background-color:#000000;
+    /* //background-image: url("img_parallax.jpg"); */
 }
 #container{
     width: 450px;
@@ -160,7 +178,7 @@ body{
     margin: 0 auto;
     text-align: center;
     background: white;
-    height: 800px;
+    height: 750px;
     overflow-y: auto;
     color: black;
     border: 10px solid #01a3a4;
