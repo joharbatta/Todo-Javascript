@@ -7,6 +7,9 @@ addbutton.addEventListener('click', addItem);
 var removebutton=document.getElementById('remove');
 removebutton.addEventListener('click',removeItem);
 
+var search=document.getElementById('input');
+search.addEventListener('keyup',searchy);
+
 function addItem()
 {
     var input=document.getElementById('input').value;
@@ -81,5 +84,30 @@ function removeItem()
   }
   
 
+
+}
+
+function searchy()
+{
+  console.log('hello');
+    var val=search.value.toUpperCase();
+    var list=document.querySelector('#val-list ul');
+    var flist=list.querySelectorAll('li');
+    var li =list.querySelectorAll('label');
+
+
+    for(i=0;i<li.length;i++)
+     {
+        var a=li[i].textContent;
+        var txtvalue = a.toUpperCase();
+         if(txtvalue.indexOf(val) > -1)
+         {
+            flist[i].style.display = "";
+        }
+        else
+        {
+            flist[i].style.display = "none";
+        }
+    }
 
 }
