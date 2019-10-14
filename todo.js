@@ -10,14 +10,14 @@ removebutton.addEventListener('click',removeItem);
 var search=document.getElementById('input');
 search.addEventListener('keyup',searchy);
 
-function addItem()
+function addItem() //add item function
 {
     var input=document.getElementById('input').value;
      var ul=document.getElementById('list');
      var textnode=document.createTextNode(input);
 
      
-     if(input=='')
+     if(input=='')  // if input is blank
      {
          alert('Enter value');
         // var p = document.createElement('p');
@@ -26,7 +26,7 @@ function addItem()
         // p.appendChild(label);
         
      }
-     else
+     else // else take input and create proper block
      {
          //create li
          li=document.createElement('li');
