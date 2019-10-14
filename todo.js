@@ -1,14 +1,14 @@
-var ul=document.getElementById('list');
+var ul=document.getElementById('list'); //getting list
 var li;
 
-var addbutton=document.getElementById('add');
-addbutton.addEventListener('click', addItem); 
+var addbutton=document.getElementById('add'); 
+addbutton.addEventListener('click', addItem); //event listener on click
 
 var removebutton=document.getElementById('remove');
 removebutton.addEventListener('click',removeItem);
 
 var search=document.getElementById('input');
-search.addEventListener('keyup',searchy);
+search.addEventListener('keyup',searchy); //keyup is for when we press ley it search
 
 function addItem()
 {
